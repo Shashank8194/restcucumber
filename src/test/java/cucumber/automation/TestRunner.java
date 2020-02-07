@@ -1,7 +1,7 @@
 package cucumber.automation;
 
 
-import com.vimalselvam.cucumber.listener.Reporter;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.AfterClass;
@@ -13,8 +13,8 @@ import java.io.File;
 
 @CucumberOptions(
         features = "src/test/java/features",
-        glue = "stepDefinations",
-        plugin={"com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"})
+        glue = "stepDefinations"
+        )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     stepDefination sd= new stepDefination();
